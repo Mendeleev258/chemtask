@@ -3,7 +3,7 @@ import originpro as op
 import sys
 
 
-# proprly origin exit script
+# properly origin exit script
 def origin_shutdown_exception_hook(exctype, value, traceback):
     op.exit()
     sys.__excepthook__(exctype, value, traceback)
